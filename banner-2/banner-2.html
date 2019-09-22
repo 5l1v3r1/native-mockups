@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Banner 2</title>
+
+  <style>
+    body {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+    }
+
+    .attribution {
+      background-color: #FFF;
+      border-radius: 2px;
+      background-color: #EFFF0C;
+      font-weight: 500;
+      font-size: 13px;
+      padding-left: 3px;
+      padding-right: 3px;
+      display: inline-block;
+      margin: 6px;
+    }
+
+    .title {
+      display: table-cell;
+      padding-bottom: 8px;
+      padding-left: 6px;
+      padding-right: 6px;
+      padding-top: 6px;
+      vertical-align: middle;
+    }
+
+    .title a {
+      color: #174FE6;
+      font-size: 22px;
+      font-weight: 700;
+      text-decoration: none;
+      font-family: 'PT Serif', serif;
+    }
+
+    .body {
+      padding: 0 6px 6px;
+      display: table;
+    }
+
+    .image {
+      display: flex;
+      height: 114px;
+      width: 114px;
+      float: left;
+    }
+
+    .image img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .image .image-link {
+      height: 100%;
+      width: 100%;
+    }
+
+    .call-to-action {
+      display: inline-block;
+      padding-right: 6px;
+      padding-top: 6px;
+      text-align: center;
+    }
+
+    .call-to-action a {
+      color: #174FE6;
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .logo {
+      padding-bottom: 8px;
+      padding-left: 8px;
+      width: 22px;
+    }
+
+    .logo img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .logo .logo-link {
+      height: 100%;
+      width: 100%;
+    }
+
+    .advertiser {
+      display: inline-block;
+      padding-bottom: 15px;
+      padding-left: 7px;
+      padding-right: 4px;
+      padding-top: 4px;
+    }
+
+    .advertiser a {
+      color: #000;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    @media (max-width:360px) {
+
+      .image {
+        float: none;
+      }
+
+    }
+
+    @media (min-width:576px) {
+
+      body,
+      .body a,
+      .call-to-action a,
+      .advertiser a {
+        font-size: 14px;
+      }
+
+      .body {
+        padding-top: 4px;
+        padding-bottom: 10px;
+      }
+
+      .attribution {
+        font-size: 12px;
+      }
+
+      .title a {
+        font-size: 26px;
+      }
+
+    }
+
+    @media (min-width:767px) {
+
+      body,
+      .body a,
+      .call-to-action a,
+      .advertiser a {
+        font-size: 16px;
+      }
+
+      .attribution {
+        font-size: 14px;
+      }
+
+      .title a {
+        font-size: 30px;
+      }
+
+      .image {
+        height: 214px;
+        width: 214px;
+      }
+
+    }
+
+    @media (min-width:991px) {
+
+      body,
+      .body a,
+      .call-to-action a,
+      .advertiser a {
+        font-size: 18px;
+      }
+
+      .attribution {
+        font-size: 16px;
+      }
+
+      .title a {
+        font-size: 36px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id='adunit' style='overflow: hidden;'>
+    <img src='[%Thirdpartyimpressiontracker%]' style='display:none'>
+    <div class='attribution'>Ad</div>
+    <div class='image'>
+      <a class='image-link' href='%%CLICK_URL_UNESC%%[%Thirdpartyclicktracker%]%%DEST_URL%%' target='_top'><img
+          src='[%Image%]'></a>
+    </div>
+    <div class='title'>
+      <a class='title-link' href='%%CLICK_URL_UNESC%%[%Thirdpartyclicktracker%]%%DEST_URL%%'
+        target='_top'>[%Headline%]</a>
+    </div>
+    <div class='body'>
+      <a class='body-link' href='%%CLICK_URL_UNESC%%[%Thirdpartyclicktracker%]%%DEST_URL%%' target='_top'>[%Body%]</a>
+    </div>
+    <div class='advertiser'>
+      <a class='advertiser-link' href='%%CLICK_URL_UNESC%%[%Thirdpartyclicktracker%]%%DEST_URL%%'
+        target='_top'>[%Attribution%]</a>
+    </div>
+    <div class='call-to-action'>
+      <a class='call-to-action-link' href='%%CLICK_URL_UNESC%%[%Thirdpartyclicktracker%]%%DEST_URL%%'
+        target='_top'>[%Calltoaction%]</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
