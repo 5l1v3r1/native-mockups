@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Banner 1</title>
+
+  <style>
+    .ad-1 {
+      border: 2px solid #F2FF35;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    body {
+      background-color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+    }
+
+    .attribution {
+      background-color: #FFF;
+      border-radius: 2px;
+      font-size: 10px;
+      padding: 1px 3px;
+      background-color: #F2FF35;
+      display: inline-block;
+      vertical-align: top;
+      text-transform: uppercase;
+      margin: 10px 5px 5px;
+      font-weight: 700;
+    }
+
+    .title {
+      padding: 0px 8px 6px;
+    }
+
+    .title a {
+      color: #212121;
+      font-size: 22px;
+      font-weight: 700;
+      text-decoration: none;
+      font-family: 'PT Serif', serif;
+    }
+
+    .body {
+      padding-bottom: 6px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .body a {
+      color: #2B2B2B;
+      font-size: 12px;
+      line-height: 1.4;
+      text-decoration: none;
+    }
+
+    .image {
+      display: flex;
+      width: 100%;
+      height: 0;
+      width: 0;
+    }
+
+    .image img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .image .image-link {
+      height: 100%;
+      width: 100%;
+    }
+
+    .call-to-action {
+      padding-right: 16px;
+      padding-top: 10px;
+      display: inline-block;
+    }
+
+    .call-to-action a {
+      color: #2A5EE8;
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: normal;
+    }
+
+    .logo {
+      display: flex;
+      height: 22px;
+      padding-bottom: 8px;
+      padding-left: 8px;
+      padding-right: 7px;
+      padding-top: 8px;
+      width: 22px;
+    }
+
+    .logo img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .logo .logo-link {
+      height: 100%;
+      width: 100%;
+    }
+
+    .advertiser {
+      padding: 5px 5px 15px 10px;
+      display: inline-block;
+    }
+
+    .advertiser a {
+      color: #242424;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .2px;
+      text-decoration: none;
+    }
+
+    @media (min-width:576px) {
+
+      body,
+      .body a,
+      .call-to-action a {
+        font-size: 14px;
+      }
+
+      .attribution {
+        font-size: 12px;
+      }
+
+      .title a {
+        font-size: 26px;
+      }
+    }
+
+    @media (min-width:767px) {
+
+      body,
+      .body a,
+      .call-to-action a {
+        font-size: 16px;
+      }
+
+      .attribution {
+        font-size: 14px;
+      }
+
+      .title a {
+        font-size: 30px;
+      }
+    }
+
+    @media (min-width:991px) {
+
+      body,
+      .body a,
+      .call-to-action a {
+        font-size: 18px;
+      }
+
+      .attribution {
+        font-size: 16px;
+      }
+
+      .title a {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id='adunit' style='overflow: hidden;'>
+    <img src='[%Thirdpartyimpressiontracker%]' style='display:none'>
+    <div class='attribution'>Ad</div>
+    <div class='title'>
+      <a class='title-link' href='%%CLICK_URL_UNESC%%[%Thirdpartyclicktracker%]%%DEST_URL%%'
+        target='_top'>[%Headline%]</a>
+    </div>
+    <div class='body'>
+      <a class='body-link' href='%%CLICK_URL_UNESC%%[%Thirdpartyclicktracker%]%%DEST_URL%%' target='_top'>[%Body%]</a>
+    </div>
+    <div class='advertiser'>
+      <a class='advertiser-link' href='%%CLICK_URL_UNESC%%[%Thirdpartyclicktracker%]%%DEST_URL%%'
+        target='_top'>[%Attribution%]</a>
+    </div>
+    <div class='call-to-action'>
+      <a class='call-to-action-link' href='%%CLICK_URL_UNESC%%[%Thirdpartyclicktracker%]%%DEST_URL%%'
+        target='_top'>[%Calltoaction%]</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
